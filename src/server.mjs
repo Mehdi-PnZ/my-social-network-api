@@ -29,7 +29,8 @@ const Server = class Server {
   }
 
   routes() {
-    // Les routes des modules seront instanciées ici
+    new routes.Auth(this.app);
+    new routes.Users(this.app);
 
     this.app.use((req, res) => {
       res.status(404).json({
