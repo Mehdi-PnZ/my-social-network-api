@@ -31,6 +31,7 @@ const Server = class Server {
   routes() {
     new routes.Auth(this.app);
     new routes.Users(this.app);
+    new routes.Events(this.app);
 
     this.app.use((req, res) => {
       res.status(404).json({
