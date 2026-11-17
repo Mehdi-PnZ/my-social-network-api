@@ -33,6 +33,7 @@ const Server = class Server {
     new routes.Users(this.app);
     new routes.Events(this.app);
     new routes.Groups(this.app);
+    new routes.Threads(this.app);
 
     this.app.use((req, res) => {
       res.status(404).json({
