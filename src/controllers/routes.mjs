@@ -6,6 +6,7 @@ import Threads from "./threads.mjs";
 import Albums from "./albums.mjs";
 import Polls from "./polls.mjs";
 import Tickets from "./tickets.mjs";
+import Shopping from "./shopping.mjs";
 
 export default {
   Auth,
@@ -16,4 +17,5 @@ export default {
   Albums,
   Polls,
   Tickets,
+  Shopping,
 };

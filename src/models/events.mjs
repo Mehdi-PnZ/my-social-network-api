@@ -12,6 +12,7 @@ const eventSchema = new Schema({
   visibility: { type: String, enum: ["public", "private"], default: "public" },
   organizers: [{ type: Schema.Types.ObjectId, ref: "User", required: true }],
   participants: [{ type: Schema.Types.ObjectId, ref: "User" }],
+  hasShoppingList: { type: Boolean, default: false },
 }).set("toJSON", {
   transform: (doc, ret) => {
     const retUpdated = ret;

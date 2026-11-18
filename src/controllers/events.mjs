@@ -15,6 +15,7 @@ const checkCreate = (body) => {
   body("organizers").isArray((item) => item.isString());
   body("participants").isArray((item) => item.isString());
   body().strict();
+  body("hasShoppingList").isBoolean();
 };
 
 const checkUpdate = (body) => {
