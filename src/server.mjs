@@ -36,6 +36,7 @@ const Server = class Server {
     new routes.Threads(this.app);
     new routes.Albums(this.app);
     new routes.Polls(this.app);
+    new routes.Tickets(this.app);
 
     this.app.use((req, res) => {
       res.status(404).json({
