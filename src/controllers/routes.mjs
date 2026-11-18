@@ -3,6 +3,7 @@ import Users from "./users.mjs";
 import Events from "./events.mjs";
 import Groups from "./groups.mjs";
 import Threads from "./threads.mjs";
+import Albums from "./albums.mjs";
 
 export default {
   Auth,
@@ -10,4 +11,5 @@ export default {
   Events,
   Groups,
   Threads,
+  Albums,
 };
